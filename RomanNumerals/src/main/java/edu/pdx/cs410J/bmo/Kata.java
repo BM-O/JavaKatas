@@ -7,7 +7,7 @@ package edu.pdx.cs410J.bmo;
  * class (and its tests).
  */
 public class Kata {
-                                                                                    
+              //test
 
   public static void main(String[] args) {
     System.err.println("Missing command line arguments");
