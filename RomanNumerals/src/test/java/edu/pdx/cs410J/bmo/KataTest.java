@@ -14,10 +14,12 @@ public class KataTest
   }
 
   @Test
-  public void arabicToRomanReturnsIWhenGiven1() {
+  public void arabicReturnsSingleRomanNumeralEquivalent() {
     String result = Kata.arabicToRoman(1);
-    assertThat(result, equalTo("I"));
+    String[] numerals = {"I", "II", "III", "V", "X", "L", "C", "D", "M"};
+    int[] digits = {1, 2, 3, 5, 10, 50, 100, 500, 1000};
+    for (int i = 0; i < 9; ++i) {
+      assertThat(numerals[i], equalTo(Kata.arabicToRoman(digits[i])));
+    }
   }
-
-
 }
