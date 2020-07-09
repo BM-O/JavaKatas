@@ -13,11 +13,43 @@ public class Kata {
     System.exit(1);
   }
 
+  String findLargestNumeral(int num) {
+    String result = "";
+    while(num >= 1){
+      if(num > 1000){
+        num -= 1000;
+        result += arabicToRoman(1000);
+      }
+      }
+      if(num > 500){
+        num -= 500;
+        result += arabicToRoman(500);
+      }
+      if(num > 100){
+        num -= 100;
+        result += arabicToRoman(100);
+      }
+      if(num > 50){
+        num -= 50;
+        result += arabicToRoman(50);
+      }
+      if(num > 10){
+        num -= 10;
+        result += arabicToRoman(10);
+      }
+      if(num > 5){
+        num -= 5;
+        result += arabicToRoman(5);
+      }
+    return result;
+    }
+
+
   public static String arabicToRoman(int num){
     String result = "I";
+
+
     switch(num){
-      case 1:
-        return "I";
       case 2:
         return "II";
       case 3:
