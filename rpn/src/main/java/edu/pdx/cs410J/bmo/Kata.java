@@ -20,7 +20,13 @@ public class Kata {
     String expression = "20 5 /";
     Stack<String> temp = getStack(expression);
 
+    while (temp.size() > 0){
+      //pop first value off, pop next two values off: see if they are integers
+      
+    }
   }
+
+
 
   public static Stack<String> getStack(String expression) {
     Stack<String> stackToReturn = new Stack<>();
