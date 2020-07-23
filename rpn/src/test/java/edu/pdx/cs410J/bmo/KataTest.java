@@ -22,4 +22,11 @@ public class KataTest
     assertThat(testStack.size(), equalTo(3));
   }
 
+  @Test
+  public void stackContainsCorrectComponents() {
+//    String testString = "20 5 /";
+//    Stack<String> testStack = Kata.getStack(testString);
+//    assertThat(testStack, cont);
+  }
+
 }

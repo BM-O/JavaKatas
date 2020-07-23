@@ -16,7 +16,7 @@ public class Kata {
   public static void main(String[] args) {
 //    System.err.println("Missing command line arguments");
 //    System.exit(1);
-
+    String[] ops = new String[]{"/","*","+","-"};
     String expression = "20 5 /";
     Stack<String> temp = getStack(expression);
 
@@ -33,6 +33,8 @@ public class Kata {
     stackToReturn.addAll(Arrays.asList(expression.split(" ")));
     return stackToReturn;
   }
+
+  public static 
 
 
 
